@@ -18,8 +18,8 @@ public final class SystemConfiguration extends AbstractSystemConfiguration {
 	private SystemConfiguration() {
 		properties = new Properties();
 		try {
-			 InputStream fis = (InputStream) new FileInputStream("res/settings.txt");
-			//InputStream fis = this.getClass().getClassLoader().getResourceAsStream("res/settings.txt");
+			 //InputStream fis = (InputStream) new FileInputStream("res/settings.txt");
+			InputStream fis = this.getClass().getClassLoader().getResourceAsStream("res/settings.txt");
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
 			System.err.println("file error " + e.toString());

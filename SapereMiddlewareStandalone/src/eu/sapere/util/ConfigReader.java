@@ -16,7 +16,7 @@ public class ConfigReader {
 	private String nodeIp;
 	private String node = "A";
 
-	 public static final String CONFIG_FILE="/Users/houssem/Desktop/e-SCT SAPERE/sapere/config.txt";
+	 public static final String CONFIG_FILE="../config.txt";
 	/**
 	 * Config path
 	 */
